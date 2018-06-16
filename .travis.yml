@@ -1,0 +1,23 @@
+language: R
+cache: packages
+sudo: false
+warnings_are_errors: false
+
+r:
+  - oldrel
+  - release
+  - devel
+os:
+  - linux
+  - osx
+
+matrix:
+  exclude:
+  - r: devel
+    os: osx
+
+r_packages:
+  - fst
+
+after_success:
+  - Rscript -e 'library(covr); codecov(quiet = FALSE)'

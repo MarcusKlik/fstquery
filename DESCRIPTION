@@ -1,0 +1,27 @@
+Package: fstquery
+Type: Package
+Title: A fst implementation of the rquery interface
+Description: Provides an 'rquery' interface to on-disk fst files.
+Version: 0.1.0
+Date: 2018-06-16
+Authors@R: c(
+    person("Mark", "Klik", email = "markklik@gmail.com", role = c("aut", "cre", "cph"))
+    )
+LazyData: true
+Depends:
+    R (>= 3.0.0)
+Imports:
+    fst
+RoxygenNote: 6.0.1
+Suggests:
+    testthat,
+    lintr,
+    data.table,
+    covr,
+    knitr,
+License: AGPL-3 | file LICENSE
+URL: https://github.com/marcusklik/fstquery
+BugReports: https://github.com/marcusklik/fstquery/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
