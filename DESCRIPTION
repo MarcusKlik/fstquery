@@ -11,7 +11,8 @@ LazyData: true
 Depends:
     R (>= 3.0.0)
 Imports:
-    fst
+    fst,
+    rqdatatable
 RoxygenNote: 6.0.1
 Suggests:
     testthat,
